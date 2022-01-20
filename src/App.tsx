@@ -1,24 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useReducer } from 'react';
+import { Routes, Route} from "react-router-dom";
+import { initState, reducer } from './00-Hooks/useReducer';
 import './App.css';
 
+import LandingPage from './pages/01-LandingPage/LandingPage';
+import HubPage from './pages/02-HubPage/HubPage';
+// interface IContextProps {
+//   state: {};
+//   dispatch: ({type}:{type:string,payload:string}) => void;
+// }
+export let pageContext=React.createContext<any>({})
 function App() {
+
+  let [state,dispatch]=useReducer(reducer,initState)
+  console.log(state)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <pageContext.Provider value={{state,dispatch}}>
+        <Routes>
+          <Route path="/" element={<LandingPage/>}/>
+          <Route path="/HubPage" element={<HubPage/>}/>
+        </Routes>
+
+          {/* <LandingPage/> */}
+      </pageContext.Provider>
     </div>
   );
 }
