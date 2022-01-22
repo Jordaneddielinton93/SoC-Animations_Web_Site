@@ -1,10 +1,13 @@
 import styled from "styled-components"
 
 export const HubLandingStyled = styled.main`
+display: flex;
+flex-direction:column;
   width:100%;
   height:92%;
+  padding-top:10px;
+  overflow-x:scroll;
   
-  overflow-y:scroll;
   ::-webkit-scrollbar {
   width: 12px;               /* width of the entire scrollbar */
   }

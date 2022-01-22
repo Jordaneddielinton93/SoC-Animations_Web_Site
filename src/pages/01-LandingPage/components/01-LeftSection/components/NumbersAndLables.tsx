@@ -1,6 +1,8 @@
-const NumbersAndLables = () => {
+const NumbersAndLables = ({MargTop}:any) => {
+let container={"width":"300px","marginTop":MargTop}
+
   return ( 
-    <div style={{display:"flex",width:"80%"}}>
+    <div style={{"display":"flex","width":"80%","justifyContent":"center"}}>
         <div style={container}>
           <h5>45k+</h5>
           <h6 style={label}>Copies</h6>
@@ -19,5 +21,4 @@ const NumbersAndLables = () => {
  
 export default NumbersAndLables;
 
-let container={width:"300px",marginTop:"70px"}
-let label={fontSize:"0.9rem",marginTop:"10px",color:"gray"}
+let label={"fontSize":"0.9rem","marginTop":"10px","color":"gray"}

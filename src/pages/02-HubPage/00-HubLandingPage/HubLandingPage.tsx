@@ -1,4 +1,6 @@
-import Carousel from "../../../components/01-Carousel/Carousel";
+import Carousel from "./components/01-Carousel/Carousel";
+import InfoPanel from "./components/02-infoPanel/InfoPanel";
+import SelectionAndCharacter from "./components/03-SelectionAndCharacter/SelectionAndCharacter";
 import { HubLandingStyled } from "./HubLandingPage.style";
 
 export default function HubLandingPage(){
@@ -7,12 +9,11 @@ export default function HubLandingPage(){
   return (
     <HubLandingStyled>
       <Carousel/>
-      <div className="testpart">
-
-        <div className="animation"><div className="animation_spaceman"></div></div>
-
-
-      </div>
+      <InfoPanel/>
+      <SelectionAndCharacter/>
+      
+        {/* <div className="animation"><div className="animation_spaceman"></div></div> */}
+      
 
     </HubLandingStyled>
   )

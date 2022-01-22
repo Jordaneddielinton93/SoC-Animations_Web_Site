@@ -3,13 +3,13 @@ import { LeftSectionStyled } from "./LeftSection.style"
 
 import { AnimationsArray } from "../../../../01-extras/animationsList"
 import NumbersAndLables from "./components/NumbersAndLables"
-import { Link, useNavigate } from "react-router-dom"
+import { Link} from "react-router-dom"
 import { pageContext } from "../../../../App"
 import { ACTIONS } from "../../../../00-Hooks/useReducer"
 import HubLandingPage from "../../../02-HubPage/00-HubLandingPage/HubLandingPage"
 
 function LeftSection(){
-  let navigate=useNavigate()
+  
   let {dispatch}= useContext(pageContext)
 
   let [word,setWord]=useState(AnimationsArray[0])
@@ -61,7 +61,7 @@ function LeftSection(){
 
         </div>
 
-        <NumbersAndLables/>
+        <NumbersAndLables MargTop={"50px"}/>
 
       </div>
       
