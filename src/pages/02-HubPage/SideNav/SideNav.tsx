@@ -11,7 +11,7 @@ import InputWithHtmlList from "./components/List-Html";
 import InputWithWorkShopList from "./components/List-WorkShops";
 import { pageContext } from "../../../App";
 import { ACTIONS } from "../../../00-Hooks/useReducer";
-import HtmlCode from "../HtmlCode/HtmlCode";
+import HtmlCode from "../02-HtmlCode/HtmlCode";
 export default function SideNav(){
   let navigate = useNavigate();
 

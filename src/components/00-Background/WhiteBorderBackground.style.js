@@ -7,11 +7,13 @@ export const WhiteBorderBackgroundStyled = styled.div`
   border:thin solid grey;
   display: flex;
   justify-content:space-between;
+  background: rgba(0, 0, 0, 0.6);
   & .HTML_LeftContainer{
     display:flex;
     width: 50%;
     height: 100%;
     justify-content:start;
+    /* background:rgba(128,128,128,0.5); */
 
     & .classRectangle,.LiRectangle,.ulRectangle,.sectionRectangle,.mainRectangle,.h1Rectangle,.navRectangle,.headerRectangle,.bodyRectangle,.titleRectangle,.LinkRectangle,.MetaRectangle,.HeadRectangle,.HTMLRectangle,.DocTypeRectangle{
       fill-opacity:0;

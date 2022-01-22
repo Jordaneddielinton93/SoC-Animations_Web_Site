@@ -4,7 +4,7 @@ import { BackgroundStyled } from "../../components/00-Background/Background.styl
 import MainSection from "../../components/01-MainSection/MainSection";
 import SideNav from "./SideNav/SideNav";
 import HeadingNav from "../../components/00-HeadNav/HeadNav";
-import HtmlCode from "./HtmlCode/HtmlCode";
+import HtmlCode from "./02-HtmlCode/HtmlCode";
 import { useContext } from "react";
 import { pageContext } from "../../App";
 

@@ -12,7 +12,6 @@ const LandingPage = () => {
         <HeadingNav/>
         <LeftSection/>
         <RightSection/>
-        
       </MainSection>
       
     </BackgroundStyled>

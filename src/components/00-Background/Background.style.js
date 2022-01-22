@@ -1,5 +1,6 @@
 import styled from "styled-components";
 export const BackgroundStyled = styled.div`
+  
   display: flex;
   justify-content:center;
   align-items:center;
@@ -9,21 +10,21 @@ export const BackgroundStyled = styled.div`
   background-size: cover;
   background-blend-mode: hard-light;
   -webkit-animation: hue-rotate 10s linear infinite;
-          animation: hue-rotate 10s linear infinite;
+          animation:  hue-rotate 10s linear infinite;
 
 
   @-webkit-keyframes hue-rotate {
   from {
-    -webkit-filter: hue-rotate(0);
-    -moz-filter: hue-rotate(0);
-    -ms-filter: hue-rotate(0);
-    filter: hue-rotate(0);
+    -webkit-backdrop-filter: hue-rotate(0);
+    -moz-backdrop-filter: hue-rotate(0);
+    -ms-backdrop-filter: hue-rotate(0);
+    backdrop-filter: hue-rotate(0);
   }
   to {
-    -webkit-filter: hue-rotate(360deg);
-    -moz-filter: hue-rotate(360deg);
-    -ms-filter: hue-rotate(360deg);
-    filter: hue-rotate(360deg);
+    -webkit-backdrop-filter: hue-rotate(360deg);
+    -moz-backdrop-filter: hue-rotate(360deg);
+    -ms-backdrop-filter: hue-rotate(360deg);
+    backdrop-filter: hue-rotate(360deg);
   }
 }
 

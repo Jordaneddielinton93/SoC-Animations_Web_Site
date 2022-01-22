@@ -1,7 +1,8 @@
-import ClassDiscription from "../pages/02-HubPage/HtmlCode/htmlDiscriptions/ClassDiscription"
-import { DiscriptionStyle } from "../pages/02-HubPage/HtmlCode/htmlDiscriptions/DiscriptStyle.style"
-import DoctypeDiscription from "../pages/02-HubPage/HtmlCode/htmlDiscriptions/DoctypeDiscription"
-import HtmlDiscription from "../pages/02-HubPage/HtmlCode/htmlDiscriptions/HtmlDiscription"
+import HubLandingPage from "../pages/02-HubPage/00-HubLandingPage/HubLandingPage"
+import ClassDiscription from "../pages/02-HubPage/02-HtmlCode/htmlDiscriptions/ClassDiscription"
+import { DiscriptionStyle } from "../pages/02-HubPage/02-HtmlCode/htmlDiscriptions/DiscriptStyle.style"
+import DoctypeDiscription from "../pages/02-HubPage/02-HtmlCode/htmlDiscriptions/DoctypeDiscription"
+import HtmlDiscription from "../pages/02-HubPage/02-HtmlCode/htmlDiscriptions/HtmlDiscription"
 
 export let ACTIONS={
   PAGE_SHOWN:"HTML_PAGE",
@@ -11,7 +12,7 @@ export let ACTIONS={
 
 
 export let initState={
-  pageShown:"DEFAULT",//<<<component
+  pageShown:<HubLandingPage/>,//<<<component
   htmlPageTagShown:"none",
   htmlPageTagDiscription:"",//<<<component
 }

@@ -6,6 +6,7 @@ import NumbersAndLables from "./components/NumbersAndLables"
 import { Link, useNavigate } from "react-router-dom"
 import { pageContext } from "../../../../App"
 import { ACTIONS } from "../../../../00-Hooks/useReducer"
+import HubLandingPage from "../../../02-HubPage/00-HubLandingPage/HubLandingPage"
 
 function LeftSection(){
   let navigate=useNavigate()
@@ -45,7 +46,7 @@ function LeftSection(){
           The worlds first and Largest source of free web-dev content, made for creating outstanding content
         </p>
         <div className="main-Buttons">
-          <Link to="/HubPage" onClick={()=>dispatch({type:ACTIONS.PAGE_SHOWN,payload:"hello"})}>
+          <Link to="/HubPage" onClick={()=>dispatch({type:ACTIONS.PAGE_SHOWN,payload:<HubLandingPage/>})}>
             <button className="main-Buttons-btn">
               Explore
             </button>
