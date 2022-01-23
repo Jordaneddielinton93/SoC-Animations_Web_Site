@@ -20,7 +20,7 @@ export let ChrisChar=<svg  height="100%" viewBox="0 0 443 696" fill="none" xmlns
 <path d="M280 443.5L202 427.5L247 228L331.5 296.5V412L280 443.5Z" fill="#EAC287"/>
 <path d="M280 443.5L202 427.5L247 228L331.5 296.5V412L280 443.5Z" stroke="#EAC287" stroke-width="10"/>
 </g>
-<g id="rightSweater" filter="url(#filter2_d_106_294)">
+<g id="" filter="url(#filter2_d_106_294)">
 <path d="M362.5 221L305.5 279L285.5 440L372 430L386 238L362.5 221Z" fill="#D8B075"/>
 <path d="M362.5 221L305.5 279L285.5 440L372 430L386 238L362.5 221Z" stroke="#D8B075" stroke-width="10"/>
 </g>
@@ -61,7 +61,7 @@ export let ChrisChar=<svg  height="100%" viewBox="0 0 443 696" fill="none" xmlns
 <g id="Line 4" filter="url(#filter6_i_106_294)">
 <path d="M346.136 140.5C351.828 137.064 353.818 134.632 353.136 128.5" stroke="#EECA95" stroke-width="2"/>
 </g>
-<circle id="Ellipse 2" cx="301.5" cy="276.5" r="4.5" fill="#4ECB71" stroke="#46B666" stroke-width="2"/>
+<circle id="CODE2" cx="301.5" cy="276.5" r="4.5" fill="#4ECB71" stroke="#46B666" stroke-width="2"/>
 <g id="CODE">
   
 <path id="Vector 25" d="M193 99.5L168 118L230 139.5L193 99.5Z" fill="#C4C4C4" stroke="#C4C4C4"/>

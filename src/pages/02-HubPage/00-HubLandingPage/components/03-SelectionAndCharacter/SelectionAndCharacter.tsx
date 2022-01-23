@@ -1,14 +1,11 @@
-import LeftSideSelection from "./LefSideCharacter/LeftSideSelection";
-import RightSideCharacter from "./RightSideCharacter/RightSideCharacter";
+
 import { SelectionAndCharacterStyled } from "./SelectionAndCharacter.style";
 
-export default function SelectionAndCharacter(){
+export default function SelectionAndCharacter(props:any){
 
   return (
     <SelectionAndCharacterStyled>
-      <LeftSideSelection/>
-      <RightSideCharacter/>
-      
+      {props.children}
     </SelectionAndCharacterStyled>
   )
 }

@@ -2,6 +2,7 @@ import HubLandingPage from "../pages/02-HubPage/00-HubLandingPage/HubLandingPage
 import ClassDiscription from "../pages/02-HubPage/02-HtmlCode/htmlDiscriptions/ClassDiscription"
 import { DiscriptionStyle } from "../pages/02-HubPage/02-HtmlCode/htmlDiscriptions/DiscriptStyle.style"
 import DoctypeDiscription from "../pages/02-HubPage/02-HtmlCode/htmlDiscriptions/DoctypeDiscription"
+import HeadDiscription from "../pages/02-HubPage/02-HtmlCode/htmlDiscriptions/HeadDiscription"
 import HtmlDiscription from "../pages/02-HubPage/02-HtmlCode/htmlDiscriptions/HtmlDiscription"
 
 export let ACTIONS={
@@ -29,7 +30,7 @@ export function reducer(state,action){
       let component
       action.payload==="doctype"&&(component=<DoctypeDiscription/>);
       action.payload==="html"&&(component=<HtmlDiscription/>);
-      action.payload==="head"&&(component=<DiscriptionStyle/>);
+      action.payload==="head"&&(component=<HeadDiscription/>);
       action.payload==="meta"&&(component=<DiscriptionStyle/>);
       action.payload==="link"&&(component=<DiscriptionStyle/>);
       action.payload==="title"&&(component=<DiscriptionStyle/>);

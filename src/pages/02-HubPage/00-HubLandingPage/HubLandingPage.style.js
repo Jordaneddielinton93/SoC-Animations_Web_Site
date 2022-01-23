@@ -7,6 +7,8 @@ flex-direction:column;
   height:92%;
   padding-top:10px;
   overflow-x:scroll;
+
+
   
   ::-webkit-scrollbar {
   width: 12px;               /* width of the entire scrollbar */
@@ -20,10 +22,24 @@ flex-direction:column;
 
 
 
-  & .testpart{
+  & .DiscoverCollectUse{
+    font-family: Montserrat, sans-serif;
+    letter-spacing:10px;
+    color:grey;
+    font-size:3rem;
     width: 100%;
-    height:100%;
-    
+    margin:20px 0px;
+    text-shadow: 2px 2px #ff0000;
+  }
+
+  & .CreatiingTheBest{
+    font-family: Montserrat, sans-serif;
+    letter-spacing:10px;
+    text-shadow: 2px 2px #ff0000;
+    color:grey;
+    font-size:2.3rem;
+    width: 100%;
+    margin:10px 0px;
   }
 
   .animation{

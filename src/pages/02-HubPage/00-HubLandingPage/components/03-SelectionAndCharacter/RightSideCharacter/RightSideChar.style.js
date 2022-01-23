@@ -1,6 +1,6 @@
 import styled from "styled-components"
 export const RightSideCharStyled= styled.aside`
-  width: 50%;
+  width: 40%;
   height:400px;
   position:relative;
 
@@ -10,6 +10,10 @@ export const RightSideCharStyled= styled.aside`
   #leftSweater{
     animation-delay:0.5s ;
     animation:leftSweater 2s infinite alternate;
+  }
+  #rightSweater{
+  
+    animation:rightSweater 2s infinite alternate;
   }
 
   #leftLeg{
@@ -47,15 +51,42 @@ export const RightSideCharStyled= styled.aside`
     animation:MouthMove 4s infinite alternate;
   }
   
-
+  #LEFTARM{
+    animation:leftArm 3s infinite alternate;
+    z-index:60;
+    /* transform:translate(140px,-100px) rotate(30deg)  */
+  }
 
   
   }
-
-  @keyframes speach { 
-        from { transform:translate(-5px,0px) }
-        to { transform:translate(0px,20px) }
+  @keyframes leftArm {
+  0%   { transform:translate(-80px,350px) rotate(-55deg) }
+  15%  { transform:translate(-80px,350px) rotate(-55deg) }
+  30%  { transform:translate(0px,0px) rotate(5deg) }
+  45%  { transform:translate(-80px,350px) rotate(-55deg) }
+  60%  { transform:translate(140px,-100px) rotate(30deg)  }
+  75%  { transform:translate(140px,-100px) rotate(30deg)  }
+  90%  { transform:translate(140px,-100px) rotate(30deg)  }
+  100% { transform:translate(140px,-100px) rotate(30deg)   }
+}
+  /* @keyframes leftArm { 
+        from { transform:translate(-80px,350px) rotate(-55deg)  }
+      
   }
+   */
+
+
+
+  @keyframes speach {
+  0%   { opacity:0 }
+  25%  { opacity:0}
+  80%  { opacity:1 }
+  90%  { opacity:0 }
+  90%  { opacity:1 }
+  100% { opacity:0 }
+}
+
+
   @keyframes Squat { 
         from { transform:translate(10,0px) }
         to { transform:translate(0,60px) }
@@ -63,6 +94,10 @@ export const RightSideCharStyled= styled.aside`
   @keyframes leftSweater { 
         from { transform:translate(-2px,0px) rotate(0deg) }
         to { transform:translate(0px,0) rotate(2deg) }
+  }
+  @keyframes rightSweater { 
+        from { transform:translate(8px,0px) rotate(4deg) }
+        to { transform:translate(0px,0) rotate(0deg) }
   }
   @keyframes leftshortsBend { 
         from { transform:translate(0px,5px) rotate(0deg) }

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const LeftSideSelectionStyled = styled.aside`
-  width: 50%;
+  width: 60%;
   height:100%;
   font-size:2rem;
   color:white;

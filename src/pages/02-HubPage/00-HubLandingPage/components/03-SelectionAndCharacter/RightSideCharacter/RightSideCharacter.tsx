@@ -1,12 +1,11 @@
-import { ChrisChar } from "../../../../../../Images/ChrisCharacter";
+
 import { RightSideCharStyled } from "./RightSideChar.style";
 
-export default function RightSideCharacter(){
+export default function RightSideCharacter({Character}:any){
 
   return (
     <RightSideCharStyled>
-      {ChrisChar}
-
+      {Character}
     </RightSideCharStyled>
   )
 }
