@@ -9,7 +9,7 @@ export const CardStyled=styled.div`
   & .bigCard{
     width: 250px;
     height:90%;
-    border:solid thick red;
+    border:solid thin red;
     background:black;
     margin:auto;
     border-radius:10px;

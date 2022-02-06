@@ -1,0 +1,233 @@
+.JinxWidth{
+	background: linear-gradient(-45deg, rgba(80, 23, 82,0.2), #332F1F, #1c293f, rgba(80, 23, 82,0.2));
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+  width: 100%;
+  justify-self: center;
+  position: relative;
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50% ;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+  80% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+#Head,#JinxRightArm,#JinxBody,#HairLeftPony{
+  filter: blur(3px);
+
+  animation: JinxLeftToRight 3s linear infinite ;
+}
+#JinxRightArmRotate{
+  animation: JinxRightArm 3s ease-in-out infinite ;
+}
+
+#FringTop{
+  animation: FringTop 3s ease-in infinite ;
+}
+#FringBottom{
+  animation: FringBottom 3s 0.1s ease-in-out infinite ;
+}
+#HairRightPony{
+  animation: HairRightPony 3s ease-in-out infinite ;
+}
+#HairLeftPonygroup{
+  animation: HairRightPony 3s 0.3s ease-in-out infinite ;
+}
+
+@keyframes HairRightPony {
+  0%   {transform: translate(0px,0px) rotate(0deg);}
+  15%  {transform: translate(0px,0px) rotate(2deg);}
+  30%  {transform: translate(0px,0px) rotate(0deg);}
+  45%  {transform:  translate(0px,0px) rotate(2deg);}
+  60%  {transform: translate(0px,0px) rotate(0deg);}
+  75%  {transform: translate(0px,0px) rotate(2deg);}
+  90%  {transform: translate(0px,0px) rotate(0deg);}
+  100%  {transform:  translate(0px,0px) rotate(2deg);}
+}
+
+@keyframes FringTop {
+  0%   {transform: translate(-20px,110px) rotate(-20deg);}
+  15%  {transform: translate(0px,0px) rotate(0deg);}
+  30%  {transform: translate(-20px,110px) rotate(-20deg);}
+  45%  {transform:  translate(0px,0px) rotate(0deg);}
+  60%  {transform: translate(-20px,110px) rotate(-20deg);}
+  75%  {transform: translate(0px,0px) rotate(0deg);}
+  90%  {transform: translate(-20px,110px) rotate(-20deg);}
+  100%  {transform:  translate(0px,0px) rotate(0deg);}
+}
+@keyframes FringBottom {
+  0%   {transform: translate(-20px,110px) rotate(-20deg);}
+  15%  {transform: translate(0px,0px) rotate(0deg);}
+  30%  {transform: translate(-20px,110px) rotate(-20deg);}
+  45%  {transform:  translate(0px,0px) rotate(0deg);}
+  60%  {transform: translate(-20px,110px) rotate(-20deg);}
+  75%  {transform: translate(0px,0px) rotate(0deg);}
+  90%  {transform: translate(-20px,110px) rotate(-20deg);}
+  100%  {transform:  translate(0px,0px) rotate(0deg);}
+}
+
+
+@keyframes JinxLeftToRight {
+  0%   {transform: translateX(0.5%)  translateY(0%);}
+  15%  {transform: translateX(0%)   translateY(5%);}
+  30%  {transform: translateX(13%)  translateY(0px);}
+  45%  {transform: translateX(22%)  translateY(5%);}
+  60%  {transform: translateX(31%)  translateY(0px);}
+  75%  {transform: translateX(40%)  translateY(5%);}
+  90%  {transform: translateX(49%)  translateY(0px);}
+  100%  {transform: translateX(58%) translateY(5%);}
+}
+@keyframes JinxRightArm {
+  /* 0%   {transform: rotate(0deg) translate(0px,0px);}/ */
+  15%  {transform: rotate(-50deg) translate(-270px,50px);}
+  /* 30%  {transform: rotate(-50deg) translate(-270px,50px);}/ */
+  45%  {transform: rotate(0deg) translate(0px,0px);}
+  /* 60%  {transform: rotate(-50deg) translate(-270px,50px);}/ */
+  75%  {transform: rotate(-50deg) translate(-270px,50px);}
+  /* 90%  {transform: rotate(-50deg) translate(-270px,50px);}/ */
+  100%  {transform:rotate(0deg) translate(0px,0px);}
+}
+
+.clouds{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+	z-index: 2;
+    background: url('https://image.ibb.co/bT4N7T/clouds.png') repeat top center;
+	animation: move-clouds-back 100s linear reverse infinite;
+}
+
+
+@keyframes move-clouds-back {
+	from {background-position:0 0;}
+	to {background-position:10000px 0;}
+}
+
+
+
+
+#HairLeftPonygroup{
+  animation: LeftMiddleTop 3s ease-in infinite ;
+}
+
+@keyframes LeftMiddleTop {
+  0%   {transform: translate(0px,0px) rotate(0deg);}
+  52.5% {transform: translate(100px,-100px) rotate(30deg)}
+  100%  {transform: translate(70px,-35px) rotate(15deg)}
+}
+
+
+
+
+
+#HairRightPony-MiddleTop{
+  
+  animation: MiddleTop 3s ease-in infinite ;
+}
+
+@keyframes MiddleTop {
+  0%   {transform: translate(0px,0px) rotate(0deg);}
+  52.5% {transform: translate(140px,-45px) rotate(30deg)}
+  100%  {transform: translate(70px,-35px) rotate(15deg)}
+}
+
+
+#HairRightPony-MiddleBottom{
+  
+  animation: MiddleBottom 3s ease-in infinite ;
+  /* transform: translate(130px,-20px) rotate(25deg); */
+}
+@keyframes MiddleBottom {
+  0%   {transform: translate(0px,0px) rotate(0deg);}
+  52.5% {transform: translate(250px,-5px) rotate(50deg);}
+  100%  {transform: translate(130px,-20px) rotate(25deg);}
+}
+
+
+#HairRightPony-bottom{
+  transform-origin: left;
+  animation: HairBottom 3s ease-in infinite ;
+  /* transform: translate(350px,105px) rotate(90deg); */
+}
+@keyframes HairBottom {
+  0%   {transform: translate(0px,0px) rotate(0deg);}
+  52.5% {transform: translate(135px,-35px) rotate(90deg);}
+  100%  {transform: translate(20px,-50px) rotate(25deg);}
+}
+
+
+#HairLeftPony-MiddleTop_2{
+  transform-origin: left;
+  animation: HairBottomLeft  33s ease-in infinite ;
+  /* transform: translate(350px,105px) rotate(90deg); */
+}
+
+@keyframes HairBottomLeft {
+  0%   {transform: translate(0px,0px) rotate(0deg);}
+  32.5% {transform: translate(55px,-35px) rotate(50deg);}
+  50%  {transform:translate(55px,-35px) rotate(50deg);}
+}
+
+
+
+
+
+
+#Cup1{
+  transform-origin: center right;
+  animation-delay: 0.5s;
+  animation: Cup  3s ease-out infinite ;
+  /* transform: translate(350px,105px) rotate(90deg); */
+}
+
+@keyframes Cup {
+  0%   {transform: translate(0px,0px) rotate(0deg);}
+  60% {transform: translate(0px,0px) rotate(0deg);}
+  80%  {transform:translate(-80px,-185px) rotate(-45deg);}
+  /* 87%  {transform:translate(180px,160px) rotate(0deg);} */
+  100%  {transform:translate(300px,300px) rotate(15deg);}
+}
+
+
+#Bottle1{
+  transform-origin: center right;
+  
+  animation: Bottle  3s 0.2s ease-out infinite ;
+  /* transform: translate(350px,105px) rotate(90deg); */
+}
+@keyframes Bottle {
+  0%   {transform: translate(0px,0px) rotate(0deg);}
+  60% {transform: translate(0px,0px) rotate(0deg);}
+  80%  {transform:translate(-80px,535px) rotate(45deg);}
+  /* 87%  {transform:translate(180px,160px) rotate(0deg);} */
+  100%  {transform:translate(-450px,530px) rotate(135deg);}
+}
+
+#electricGroup1{
+  animation: Electric  3s  ease-in-out infinite ;
+  
+}
+
+
+
+#electricGroup2{
+  opacity: 0;
+  animation: Electric  3s 2s ease-in-out infinite ;
+}
+
+@keyframes Electric {
+  0%   { opacity: 0;stroke-width: 0%;}
+  100%  {opacity: 0.5;stroke-width: 100%;}
+}

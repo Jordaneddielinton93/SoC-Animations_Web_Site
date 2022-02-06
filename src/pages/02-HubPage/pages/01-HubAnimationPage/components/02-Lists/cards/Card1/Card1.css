@@ -1,0 +1,91 @@
+
+.Ccard1{
+  height:60%;
+  width:40%;
+  align-self:center;
+  background-color:white ;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Ccard1 img{
+  max-height: 100%;
+  object-fit: cover;
+  background-color: black;
+}
+
+.Ccard2,.Ccard3,.Ccard4,.Ccard5{
+  position: absolute;
+  z-index: -1;
+  height:0%;
+  width:0%;
+  top: 50%;
+  left: 50%;
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Ccard2{
+  background-color:lightgrey ;
+  transform: rotate(-90deg);
+}
+.Ccard1:hover .Ccard2{
+  transition-delay: 0.5s;
+
+  position: absolute;
+  left: 10px;
+  z-index: 10;
+  transform: rotate(4deg);
+  height:35%;
+  width:35%;
+}
+
+.Ccard3{
+  background-color:lightgrey ;
+  transform: rotate(-180deg);
+}
+.Ccard1:hover .Ccard3{
+  transition-delay: 0.4s;
+  position: absolute;
+  top: 10px;
+  z-index: 10;
+  transform: rotate(4deg);
+  height:35%;
+  width:35%;
+}
+
+
+.Ccard4{
+  background:lightgray;
+  transform: rotate(-120deg);
+}
+.Ccard1:hover .Ccard4{
+  transition-delay: 0.4s;
+
+  position: absolute;
+  left:65%;
+  z-index: 10;
+  transform: rotate(-4deg);
+  height:30%;
+  width:30%;
+}
+
+
+.Ccard5{
+  background:lightgray;
+  transform: rotate(-120deg);
+}
+.Ccard1:hover .Ccard5{
+  transition-delay: 0.2s;
+  position: absolute;
+  top: 10px;
+  left:10%;
+  z-index: 10;
+  transform: rotate(-4deg);
+  height:30%;
+  width:30%;
+}
+
+

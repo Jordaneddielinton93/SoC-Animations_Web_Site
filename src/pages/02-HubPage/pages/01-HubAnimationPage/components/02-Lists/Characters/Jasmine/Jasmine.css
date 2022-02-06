@@ -1,0 +1,59 @@
+.JasmineWidth{
+  width: 100%;
+}
+
+/* middle  */
+.JasmineWidth:hover #NoteHand1{ 
+  transform-origin: right;
+  animation: NoteHand1  5s  infinite ;
+}
+
+
+/* bottom */
+.JasmineWidth:hover #NoteHand2{
+  transform-origin: right;
+  animation: NoteHand1  5s 1.5s  infinite ;
+}
+
+
+/* top */
+.JasmineWidth:hover #NoteHand3{
+  transform-origin: right;
+  animation: NoteHand1  5s 2s infinite ;
+}
+
+@keyframes NoteHand1 {
+  0%   {transform: translate(0px,0px) rotate(0deg);}
+  100%  {transform:  translate(-80px,380px) rotate(90deg);}
+}
+
+
+
+.JasmineWidth:hover #CarpetAndGirl{
+  transform-origin: center;
+  animation: CarpetAndGirl 3s ease-in-out alternate infinite ;
+}
+
+@keyframes CarpetAndGirl {
+  from{transform: translate(0px,20px) rotate(5deg);}
+  to{transform: translate(0px,-20px) rotate(-5deg);}
+}
+
+
+
+.JasmineWidth:hover #CarpetCard1{
+  transform-origin: center;
+  animation: CarpetCard1 6s infinite ;
+}
+.JasmineWidth:hover #CarpetCard2{
+  transform-origin: center;
+  animation: CarpetCard1 6s infinite ;
+}
+.JasmineWidth:hover #CarpetCard3{
+  transform-origin: center;
+  animation: CarpetCard1 6s infinite ;
+}
+@keyframes CarpetCard1 {
+  from{transform: translate(0px,0px) rotate(0deg);}
+  to{transform: translate(0px,0px) rotate(360deg);}
+}

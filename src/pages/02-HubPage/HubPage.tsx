@@ -4,14 +4,11 @@ import { BackgroundStyled } from "../../components/00-Background/Background.styl
 import MainSection from "../../components/01-MainSection/MainSection";
 import SideNav from "./SideNav/SideNav";
 import HeadingNav from "../../components/00-HeadNav/HeadNav";
-import HtmlCode from "./02-HtmlCode/HtmlCode";
-import { useContext } from "react";
-import { pageContext } from "../../App";
 
-export default function HubPage(){
+import { IHubProps } from "../../00-Interfaces/Interfaces";
 
-  let {state,dispatch}= useContext(pageContext)
-console.log(state)
+export default function HubPage({page}:any){
+  // const {page}=props
   return (
     <BackgroundStyled>
 
@@ -19,7 +16,7 @@ console.log(state)
       <MainSection>
       {/* gets the nav bar HOME,Animations,Resources,Workshops & then displays whatever is on the page when the sideNav is clicked */}
         <HeadingNav/>
-        {state.pageShown}
+        {page}
       </MainSection>
 
     </BackgroundStyled>

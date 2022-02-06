@@ -2,7 +2,7 @@ import { NavItemStyled } from "./NavItem.style"
 
 export default function NavItem({childElements,icon,icon2,title,onClick,isHtmlDropDown}:any){
   return(
-    <NavItemStyled >
+    <NavItemStyled to={`/hub/${title}`} >
       <div className="heading" onClick={onClick}>
         <h1 className="heading-icon1">{icon}</h1>
         <h3 className="heading-title">{title}</h3>

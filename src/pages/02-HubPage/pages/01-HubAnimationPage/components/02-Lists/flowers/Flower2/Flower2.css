@@ -1,0 +1,44 @@
+
+
+.Flower2:hover #Flower2BeeRightWing{
+  animation: BeerightWing 2s infinite;
+  /* transform: translate(-10px,30px) rotate(-15deg) */
+}
+
+
+@keyframes BeerightWing {
+  0% { transform: translate(-5px,110px) rotate(-60deg)}
+  10% { transform: translate(-10px,30px) rotate(-15deg)}
+  15% { transform: translate(-5px,110px) rotate(-60deg)}
+  20% { transform: translate(-10px,30px) rotate(-15deg)}
+  100% { transform: translate(-10px,30px) rotate(-15deg)}
+}
+
+.Flower2:hover #Flower2BeeLeftWing{
+  animation: BeeLeftWing 2s infinite;
+  /* transform: translate(20px,-15px) rotate(20deg) */
+}
+
+@keyframes BeeLeftWing {
+   0% { transform: translate(70px,-30px) rotate(56deg)}
+  10% { transform: translate(20px,-15px) rotate(20deg)}
+  15% { transform: translate(70px,-30px) rotate(56deg)}
+  20% { transform: translate(20px,-15px) rotate(20deg)}
+  100% { transform: translate(20px,-15px) rotate(20deg)} 
+}
+
+.Flower2:hover #Flower2bee{
+  animation: Flower2Bee 5s infinite;
+  /* transform: translate(60px,-40px) rotate(20deg) */
+}
+
+@keyframes Flower2Bee {
+   0% { transform: translate(0px,0px) rotate(0deg)}
+  20% { transform: translate(-50px,0px) rotate(-20deg)}
+  35% { transform: translate(60px,-40px) rotate(20deg)}
+  45% { transform: translate(60px,-20px) rotate(20deg)}
+  60% { transform: translate(0px,0px) rotate(0deg)}
+  80% { transform: translate(60px,-20px) rotate(20deg)} 
+  100% { transform: translate(0px,0px) rotate(0deg)} 
+}
+

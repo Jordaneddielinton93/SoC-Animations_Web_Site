@@ -4,58 +4,46 @@ import { AiOutlineHome } from 'react-icons/ai';
 import { MdAnimation } from 'react-icons/md';
 import { BsTags,BsChevronDown } from 'react-icons/bs';
 import { FaChalkboardTeacher} from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
-import { useContext, useState } from "react";
+import {  useState } from "react";
 import InputWithAnimationList from "./components/List-Animation";
 import InputWithHtmlList from "./components/List-Html";
 import InputWithWorkShopList from "./components/List-WorkShops";
-import { pageContext } from "../../../App";
-import { ACTIONS } from "../../../00-Hooks/useReducer";
-import HtmlCode from "../02-HtmlCode/HtmlCode";
+
 export default function SideNav(){
-  let navigate = useNavigate();
 
-
-  let [isAnimationDropDown,setAnimationDropDown]=useState(false)
-  let [isHtmlDropDown,setHtmlDropDown]=useState(false)
-  let [isWorkShopDropDown,setWorkShopDropDown]=useState(false)
-
-  let {dispatch}=useContext(pageContext)
-
-  
+  let [isAnimationDropDown,setAnimationDropDown]=useState<boolean>(false)
+  let [isHtmlDropDown,setHtmlDropDown]=useState<boolean>(false)
+  let [isWorkShopDropDown,setWorkShopDropDown]=useState<boolean>(false)
 
   return (
     <SideNavStyled>
 
-      <NavItem 
+      <NavItem
         icon={<AiOutlineHome/>} 
         title={"Home"} 
-        onClick={()=>navigate('/')}/>
+        />
       
-      <NavItem 
+      <NavItem
         icon={<MdAnimation/>} 
         title={"Animations"} 
-        onClick={()=>setAnimationDropDown(!isAnimationDropDown)}
         icon2={<BsChevronDown/>}
+        onClick={()=>{setAnimationDropDown(!isAnimationDropDown)}}
         isHtmlDropDown={isAnimationDropDown}
         childElements={<InputWithAnimationList/>}
 
-        
         />
-
-      <NavItem 
+       
+      <NavItem
         icon={<BsTags/>} 
         title={"HTML"} 
-        onClick={()=>{
-          setHtmlDropDown(!isHtmlDropDown)
-          dispatch({type:ACTIONS.PAGE_SHOWN,payload:<HtmlCode/>})
-          }}
+        onClick={()=>{setHtmlDropDown(!isHtmlDropDown)}}
         icon2={<BsChevronDown/>}
         isHtmlDropDown={isHtmlDropDown}
         childElements={<InputWithHtmlList/>}
         />
-
-        <NavItem 
+     
+        
+        <NavItem
         icon={<FaChalkboardTeacher/>} 
         title={"Work-Shops"} 
         onClick={()=>setWorkShopDropDown(!isWorkShopDropDown)}
@@ -63,6 +51,7 @@ export default function SideNav(){
         isHtmlDropDown={isWorkShopDropDown}
         childElements={<InputWithWorkShopList/>}
         />
+       
       
 
 
