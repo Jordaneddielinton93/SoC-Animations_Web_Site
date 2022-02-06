@@ -102,6 +102,11 @@ export function reducer(state,action){
         <TextAnimation Text="Try Me" fontSize="5em"/>
       ]);
 
+      action.payload==="Home"&&(
+        componentList=[
+        <Instructions />
+      ]);
+
       
       return {
         ...state,
