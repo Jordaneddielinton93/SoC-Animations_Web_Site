@@ -14,7 +14,6 @@ import DoctypeDiscription from "../pages/02-HubPage/pages/02-HtmlPage/htmlDiscri
 import HeadDiscription from "../pages/02-HubPage/pages/02-HtmlPage/htmlDiscriptions/HeadDiscription"
 import HtmlDiscription from "../pages/02-HubPage/pages/02-HtmlPage/htmlDiscriptions/HtmlDiscription"
 
-import RightSideCharacter from "../pages/02-HubPage/pages/00-HubLandingPage/components/03-SelectionAndCharacter/RightSideCharacter/RightSideCharacter"
 
 import TextAnimation from "../pages/02-HubPage/pages/01-HubAnimationPage/components/02-Lists/Text/WaveAnimation/TextAnimation"
 import Jasmine from "../pages/02-HubPage/pages/01-HubAnimationPage/components/02-Lists/Characters/Jasmine/Jasmine"

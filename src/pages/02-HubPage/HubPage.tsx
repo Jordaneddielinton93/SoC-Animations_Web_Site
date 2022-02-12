@@ -10,7 +10,15 @@ import { IHubProps } from "../../00-Interfaces/Interfaces";
 export default function HubPage({page}:any){
   // const {page}=props
   return (
-    <BackgroundStyled>
+    <div style={{display: "flex",
+      justifyContent:"center",
+      alignItems:"center",
+      width: "100%",
+      height: "100vh",
+      background: "#4158D0",
+backgroundImage: "linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)"
+
+      }}>
 
       <SideNav/> {/* <<< when you click on a button it shows the page on the {state.pageShown} */}
       <MainSection>
@@ -19,6 +27,6 @@ export default function HubPage({page}:any){
         {page}
       </MainSection>
 
-    </BackgroundStyled>
+    </div>
   )
 }

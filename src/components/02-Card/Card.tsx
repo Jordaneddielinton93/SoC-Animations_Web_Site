@@ -1,29 +1,24 @@
+import { Zelda1, Zelda2 } from "simple-react-animations-v2";
 import { CardStyled } from "./Card.style";
 
 export default function Card(){
   return (
     <CardStyled>
       <div className="bigCard">
-        <div className="animation_spaceman"></div>
-        <div className="stars"></div>
+        <Zelda2 size="100%" border=""/>
       </div>
 
       <div className="smallCard1 tinycards">
-        <h1>Lorem</h1>
-        <h1>Ipsum</h1>
-        <button className="fancyButton">reap</button>
+        <Zelda1 size="100%" border=""/>
+       
       </div>
 
-      <div className="smallCard2 tinycards">
-        <h1>Lorem</h1>
-        <h1>Ipsum</h1>
-        <button className="fancyButton">reap</button>
-      </div>
+   
 
       <div className="smallCard3 tinycards">
-        <h1>Lorem</h1>
-        <h1>Ipsum</h1>
-        <button className="fancyButton">reap</button>
+      <div className="animation_spaceman"></div>
+
+       
       </div>
     </CardStyled>
   )

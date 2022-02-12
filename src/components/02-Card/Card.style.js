@@ -9,11 +9,10 @@ export const CardStyled=styled.div`
   & .bigCard{
     width: 250px;
     height:90%;
-    border:solid thin red;
-    background:black;
+  
+    
     margin:auto;
-    border-radius:10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
   }
   & .tinycards{
       position: absolute;
@@ -21,12 +20,12 @@ export const CardStyled=styled.div`
       align-items:center;
       justify-content:space-evenly;
       flex-direction:column;
-      width: 140px;
-      height:50%;
-      border:solid thick red;
+      width: 190px;
+      height: 190px;
+      
       border-radius:10px;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-      background:black;
+    border: inset thick yellow;
+      background:lightblue;
       & .fancyButton{
         width:100px;
         height:44px;
