@@ -7,7 +7,7 @@ flex-direction:column;
   height:92%;
   padding-top:10px;
   overflow-x:scroll;
-
+  
 
   
   ::-webkit-scrollbar {

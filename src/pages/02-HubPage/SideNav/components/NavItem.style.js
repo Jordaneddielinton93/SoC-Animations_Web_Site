@@ -34,10 +34,12 @@ export const NavItemStyled=styled(Link)`
       font-size:2rem;
     }
     &-title{
+     
       margin-left:10px;
       align-self:center;
     }
     &-icon2{
+     
       margin-left:20px;
       font-size:1rem;
       margin-top:5px;

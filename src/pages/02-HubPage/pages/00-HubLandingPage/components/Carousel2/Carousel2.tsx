@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import TextAnimation from "../../../01-HubAnimationPage/components/02-Lists/Text/WaveAnimation/TextAnimation";
-import { CarouselStyled } from "./Carousel.style";
+import { CarouselStyled } from "./Carousel2.style";
 
 
 

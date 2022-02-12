@@ -1,9 +1,8 @@
-import { ChrisChar } from "../Images/ChrisCharacter"
-import { LizChar } from "../Images/LizCharacter"
+
+
 import HubLandingPage from "../pages/02-HubPage/pages/00-HubLandingPage/HubLandingPage"
-import Card1 from "../pages/02-HubPage/pages/01-HubAnimationPage/components/02-Lists/cards/Card1/Card1"
-import Card2 from "../pages/02-HubPage/pages/01-HubAnimationPage/components/02-Lists/cards/Card2/Card2"
-import Card3 from "../pages/02-HubPage/pages/01-HubAnimationPage/components/02-Lists/cards/Card3/Card3"
+
+
 import Flower1 from "../pages/02-HubPage/pages/01-HubAnimationPage/components/02-Lists/flowers/Flower1/Flower1"
 import Flower2 from "../pages/02-HubPage/pages/01-HubAnimationPage/components/02-Lists/flowers/Flower2/Flower2"
 import Flower3 from "../pages/02-HubPage/pages/01-HubAnimationPage/components/02-Lists/flowers/Flower3/Flower3"
@@ -20,8 +19,9 @@ import RightSideCharacter from "../pages/02-HubPage/pages/00-HubLandingPage/comp
 import TextAnimation from "../pages/02-HubPage/pages/01-HubAnimationPage/components/02-Lists/Text/WaveAnimation/TextAnimation"
 import Jasmine from "../pages/02-HubPage/pages/01-HubAnimationPage/components/02-Lists/Characters/Jasmine/Jasmine"
 import Instructions from "../pages/02-HubPage/pages/01-HubAnimationPage/components/02-Lists/Instructions/Intructions"
-
-
+import "simple-react-animations-v2/dist/simple-react-animations-v2.cjs.development.css";
+import { Card1, Card2, Card3, Carousel1, Zelda1, Zelda2 ,SoCChris, SoCLiz } from "simple-react-animations-v2"
+import Carousel from "../pages/02-HubPage/pages/00-HubLandingPage/components/Carousel2/Carousel2"
 
 
 export let ACTIONS={
@@ -91,10 +91,12 @@ export function reducer(state,action){
   
       action.payload==="Characters"&&(
         componentList=[
-          <RightSideCharacter Character={ChrisChar}/>,
-          <RightSideCharacter Character={LizChar}/>,
+          <SoCChris/>,
+          <SoCLiz/>,
           <Jinx/>,
           <Jasmine/>
+          
+          
         ]);
 
       action.payload==="Text"&&(
@@ -107,6 +109,16 @@ export function reducer(state,action){
         <Instructions />
       ]);
 
+      action.payload==="Zelda"&&(
+        componentList=[
+        <Zelda1/>,<Zelda2/>
+      ]);
+
+      action.payload==="Carousel"&&(
+        componentList=[
+        <Carousel1 size="100%"/>,
+        <Carousel/>
+      ]);
       
       return {
         ...state,

@@ -7,10 +7,13 @@ import { pageContext } from "../../../../App"
 
 export const AnimationNames:IArrayObjStrNumb[]=[
   {name:"Home",uid:99,},
-  {name:"Flowers",uid:100,},
   {name:"Cards",uid:200},
+  {name:"Carousel",uid:250},
   {name:"Characters",uid:300},
-  {name:"Text",uid:400},
+  {name:"Zelda",uid:400},
+  {name:"Flowers",uid:100,},
+  {name:"Text",uid:500},
+  
 ]
 
 export default function InputWithAnimationList(){

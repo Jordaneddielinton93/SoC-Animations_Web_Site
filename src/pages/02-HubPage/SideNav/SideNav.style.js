@@ -14,6 +14,9 @@ export  const SideNavStyled=styled.nav`
   border: 1px  solid rgba(255, 255, 255, 0.3);
   border-radius:15px;
   overflow-y:scroll;
+  
+
+  
   & .Tags{
     font-size:1.3rem;
     height: 30px;
@@ -31,4 +34,5 @@ export  const SideNavStyled=styled.nav`
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid orange;  /* creates padding around scroll thumb */
   }
+
 `
