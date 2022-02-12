@@ -25,8 +25,8 @@ export default function HubLandingPage(){
       </SelectionAndCharacter>
             <Carousel1 size="100%" 
             backgroundColor1="#532848"
-            backgroundColor2="#532848"
-            backgroundColor3="#532848"
+            backgroundColor2="#D676A3"
+            backgroundColor3="#FAC670"
               />
 
 
