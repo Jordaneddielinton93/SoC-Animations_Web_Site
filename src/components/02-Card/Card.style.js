@@ -7,7 +7,7 @@ export const CardStyled=styled.div`
   position: relative;
 
   & .bigCard{
-    width: 250px;
+    max-width: 250px;
     height:90%;
   
     
@@ -20,10 +20,8 @@ export const CardStyled=styled.div`
       align-items:center;
       justify-content:space-evenly;
       flex-direction:column;
-      width: 190px;
-      height: 190px;
-      
-      border-radius:10px;
+      max-width: 190px;
+    
     border: inset thick yellow;
       background:lightblue;
       & .fancyButton{

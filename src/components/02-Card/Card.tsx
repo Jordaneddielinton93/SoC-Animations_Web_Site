@@ -16,7 +16,9 @@ export default function Card(){
    
 
       <div className="smallCard3 tinycards">
-      <div className="animation_spaceman"></div>
+      <Zelda1 size="100%" border=""/>
+
+      {/* <div className="animation_spaceman"></div> */}
 
        
       </div>

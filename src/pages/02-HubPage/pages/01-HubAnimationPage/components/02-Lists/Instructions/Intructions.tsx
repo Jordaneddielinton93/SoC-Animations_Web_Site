@@ -17,6 +17,33 @@ const Instructions = () => {
       <div>
       import "simple-react-animations-v2/dist/simple-react-animations-v2.cjs.development.css";
       </div>
+      <br />
+      <br />
+      <br />
+      <div>
+        <ul>
+          <li>{"<Zelda1/>"}</li>
+          <li>{"<Zelda2/>"}</li>
+          ---------------------
+          <li>{"<Card1/>"}</li>
+          <li>{"<Card2/>"}</li>
+          <li>{"<Card3/>"}</li>
+          ---------------------
+          <li>{"<Carousel1/>"}</li>
+          ---------------------
+          <li>{"<Jasmine/>"}</li>
+          <li>{"<Jinx/>"}</li>
+          <li>{"<SoCLiz/>"}</li>
+          <li>{"<SoCChris/>"}</li>
+          ---------------------
+          <li>{"<Flower1/>"}</li>
+          <li>{"<Flower2/>"}</li>
+          <li>{"<Flower3/>"}</li>
+
+
+        </ul>
+      </div>
+      
     </InstructionsStyled>
    );
 }
