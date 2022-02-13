@@ -1,4 +1,4 @@
-import { Zelda1, Zelda2 } from "simple-react-animations-v2";
+import { Zelda1, Zelda2, Zelda3 } from "simple-react-animations-v2";
 import { CardStyled } from "./Card.style";
 
 export default function Card(){
@@ -16,7 +16,7 @@ export default function Card(){
    
 
       <div className="smallCard3 tinycards">
-      <Zelda1 size="100%" border=""/>
+      <Zelda3 size="100%" border=""/>
 
       {/* <div className="animation_spaceman"></div> */}
 

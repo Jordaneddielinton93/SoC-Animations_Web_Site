@@ -19,7 +19,7 @@ import TextAnimation from "../pages/02-HubPage/pages/01-HubAnimationPage/compone
 import Jasmine from "../pages/02-HubPage/pages/01-HubAnimationPage/components/02-Lists/Characters/Jasmine/Jasmine"
 import Instructions from "../pages/02-HubPage/pages/01-HubAnimationPage/components/02-Lists/Instructions/Intructions"
 import "simple-react-animations-v2/dist/simple-react-animations-v2.cjs.development.css";
-import { Card1, Card2, Card3, Carousel1, Zelda1, Zelda2 ,SoCChris, SoCLiz } from "simple-react-animations-v2"
+import { Card1, Card2, Card3, Carousel1, Zelda1, Zelda2 ,SoCChris, SoCLiz, Zelda3 } from "simple-react-animations-v2"
 import Carousel from "../pages/02-HubPage/pages/00-HubLandingPage/components/Carousel2/Carousel2"
 
 
@@ -110,7 +110,7 @@ export function reducer(state,action){
 
       action.payload==="Zelda"&&(
         componentList=[
-        <Zelda1/>,<Zelda2/>
+        <Zelda1/>,<Zelda2/>,<Zelda3/>
       ]);
 
       action.payload==="Carousel"&&(
