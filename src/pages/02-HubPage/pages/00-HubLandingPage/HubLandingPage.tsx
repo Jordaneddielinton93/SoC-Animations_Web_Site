@@ -13,9 +13,15 @@ export default function HubLandingPage(){
 
   return (
     <HubLandingStyled>
-      <Carousel/>
+      <Carousel1 size="100%" 
+            backgroundColor1="#441b3a"
+            backgroundColor2="#532848"
+            backgroundColor3="#441b3a"
+              />
      
       <InfoPanel/>
+      <Carousel/>
+
       <h1 className="DiscoverCollectUse">Discover ,Collect ,Use</h1>
       <h3 className="CreatiingTheBest">Creating Amazing Animations</h3>
       <h5 className="ForEveryScreen">For Every Screen-size</h5>
@@ -23,11 +29,7 @@ export default function HubLandingPage(){
         <LeftSideSelection/>
         <SoCChris/>
       </SelectionAndCharacter>
-            <Carousel1 size="100%" 
-            backgroundColor1="#441b3a"
-            backgroundColor2="#532848"
-            backgroundColor3="#7e446f"
-              />
+  
       <SelectionAndCharacter>
         <SoCLiz/>
         <LeftSideSelection/>

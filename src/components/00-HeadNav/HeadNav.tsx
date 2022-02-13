@@ -11,7 +11,7 @@ export default function HeadingNav(){
       <h2 className="NavLogo">S-O-C/W3S</h2>
       <ul className="NavList">
         <Link to="/"><li>Home</li></Link>
-        <Link to="/"><li>Animations</li></Link>
+        <Link to="/Hub/Home"><li>Animations</li></Link>
         <Link to="/"><li>Resources</li></Link>
         <Link to="/"><li>Workshops</li></Link>
         <Link to="/"><li>path</li></Link>

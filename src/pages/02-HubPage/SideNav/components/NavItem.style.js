@@ -10,7 +10,7 @@ export const NavItemStyled=styled(Link)`
   margin-top:10px;
   border-radius:5px;
   cursor:pointer;
-
+  border:thin outset white;
   & .Html_Input{
     background:white;
     height:25px;
@@ -26,6 +26,7 @@ export const NavItemStyled=styled(Link)`
     width: 100%;
     min-height: 50px;
     align-items:center;
+    color:#a1a1a1;
     &:hover{
       color:white;
     }
